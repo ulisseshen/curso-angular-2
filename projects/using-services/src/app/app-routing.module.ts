@@ -4,14 +4,13 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
-    path: 'using-services',
+    path: '',
     component: AppComponent,
-    data: { projectName: 'using-services' }
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

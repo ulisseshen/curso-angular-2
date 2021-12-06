@@ -9,6 +9,7 @@ import { NewAccountComponent } from './new-account/new-account.component';
 import { LoggingService } from './logging.service';
 import { AccountsService } from './accounts.service';
 import { AppRoutingModule } from './app-routing.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
     NewAccountComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     FormsModule,
     AppRoutingModule
   ],

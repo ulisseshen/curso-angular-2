@@ -9,6 +9,18 @@ import { filter, map } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'painel-curso';
+  public projects = [
+    'using-services',
+    'services-assignment-start',
+    'routing-start',
+    'observables-start',
+    'main',
+    'forms-td-start',
+    'forms-td-assignment-start',
+    'forms-reactive-start',
+    'forms-reactive-assignment-start',
+
+  ]
 
   constructor(private router: Router,
     private route: ActivatedRoute) {
