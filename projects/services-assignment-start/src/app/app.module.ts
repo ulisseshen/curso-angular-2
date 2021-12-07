@@ -1,19 +1,26 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+import { ActiveUsersComponent } from './active-users/active-users.component';
+import { InactiveUsersComponent } from './inactive-users/inactive-users.component';
+import { CounterService } from './counter.service';
+import { CommonModule } from '@angular/common';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent,
   ],
   imports: [
     CommonModule,
+    FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CounterService],
   bootstrap: [AppComponent]
 })
-export class S3_AppModule { }
+export class AppModule { }

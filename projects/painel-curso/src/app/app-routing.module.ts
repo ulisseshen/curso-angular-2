@@ -41,7 +41,7 @@ const routes: Routes = [
   {
     path: 'services-assignment-start',
     loadChildren: () => import('../../../services-assignment-start/src/app/app.module')
-      .then(m => m.S3_AppModule)
+      .then(m => m.AppModule)
   },
   {
     path: 'using-services',
